@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.shadow-default-sm{
+    box-shadow: 0 1px 5px#9b9292 !important;
+}
+
+.shadow-default-md{
+    box-shadow: 0 0 5px 1px #9b9292 !important;
+}
+
+.shadow-default-lg{
+    box-shadow: 0 0 8px 1px #9b9292 !important;
+}
+
+
+.swiper-pagination{
+    position: relative !important;
+    margin-top: 40px;
+}
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(146% + 1.3px);
+    height: 346px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: #FFFFFF;
+}
+
+.truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@keyframes fadein {
+    from {width: 60px; height: 60px;}
+    to {width: 300px; height: auto;}
+}
+
+.inputImage {
+    width: 60px;
+    height: 60px;
+}
+
+.fade-in {
+  animation: fadein 0.35s ease forwards;
+}
+.preview-image:hover div{
+    display: flex !important;
+}
